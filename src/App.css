@@ -1,0 +1,129 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f7f9; /* Cor de fundo suave */
+}
+
+.header {
+  background-color: #f9d5a7; /* Tom pastel suave */
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #f0856d; /* Cor de destaque */
+  font-weight: 700;
+}
+
+.home-section, .about-section, .contact-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #f9b3b5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f0856d;
+}
+
+footer {
+  background-color: #f9d5a7;
+  padding: 10px;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+/* Estilização dos inputs e formulário de contato */
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #f0856d;
+  box-shadow: 0 0 5px rgba(240, 133, 109, 0.5);
+}
+
+.form-button {
+  background-color: #f0856d;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-button:hover {
+  background-color: #f9b3b5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .product-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
